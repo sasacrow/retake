@@ -1,0 +1,4 @@
+student name: Beghiu Alexandru
+student number: 646415
+student class: IT1A
+URL student GitHub repository: https://github.com/sasacrow/retake
