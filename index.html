@@ -1,231 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Alexandru Beghiu" />
-    <meta
-      name="description"
-      content="This webpage is about Haarlem, Oute-Stad and sport clubs in that area."
-    />
-    <meta
-      name="keywords"
-      content="Haarlem, Oute-Stad, Hwa-Rang Dragon, Sport Clubs, Windmill de Adriaan, De Jopenkerk, Bavo Church"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexandru Beghiu">
+    <meta name="description" content="This webpage is about Haarlem, Oute-Stad and sport clubs in that area.">
+    <meta name="keywords" content="Haarlem, Oute-Stad, Hwa-Rang Dragon, Sport Clubs, Windmill de Adriaan, De Jopenkerk, Bavo Church">
     <title>zelfverdediging.eu</title>
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li class="logo">
-          <a href="#landing"><img src="img/logo.png"/></a>
-        </li>
-        <li><a href="#maincontent">Haarlem</a></li>
-        <li><a href="#secondarycontent">Oute-Stad</a></li>
-        <li><a href="#sportcontent">Mudo</a></li>
-        <li><a href="#referalcontent">Refferal</a></li>
-        <li><a href="#contactcontent">Contact</a></li>
-      </ul>
-    </nav>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Cookie statement-->
+<input type="checkbox" id="accept">
+<input type="checkbox" id="decline">
+<section id="cookiestatement">
+    <article><header><h2>Cookie Statement</h2></header>
+    <p>This website uses cookies. By using the website and agreeing to this
+    policy, you consent to our use of cookies in accordance with the terms
+    of this policy.</p>
+    <section>
+    <label class="btn full" for="accept"><span>Accept</span></label>
+    <label class="btn" for="decline"><span>Decline</span></label>
+    </section></article>
+</section>
 
-    <header id="landing">
-      <section class="header-background">
-        <video src="img/video.mp4" autoplay loop muted></video>
-      </section>
-      <section class="header-content">
-        <h1 class="title">Haarlem’s Sights and Attractions</h1>
-        <h2 class="payoff">
-          You can easily discover Haarlem’s sights and attractions on a
-          leisurely stroll through the city.
-        </h2>
-      </section>
-    </header>
+<label for="toggle" class="hamburger">
+    <svg class="MuiSvgIcon-root jss821" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></label>
+    <input type="checkbox" name="toggle" id="toggle">
 
+<!--Navigation bar-->
+<nav><ul><li class="logo"><a href="#landing"><img src="img/logo.png"></a></li>
+    <li><a href="#maincontent">Haarlem</a></li>
+    <li><a href="#secondarycontent">Oute-Stad</a></li>
+    <li><a href="#sportcontent">Mudo</a></li>
+    <li><a href="#referalcontent">Refferal</a></li>
+    <li><a href="#contactcontent">Contact</a></li></ul>
+</nav>
+<!--Video background-->
+<header id="landing">
+    <section class="header-background"><video src="img/video.mp4" autoplay loop muted></video></section>
+    <section class="header-content"><h1 class="title">Haarlem’s Sights and Attractions</h1>
+    <h2 class="payoff">You can easily discover Haarlem’s sights and attractions on a leisurely stroll through the city.</h2></section>
+</header>
+<main>
+    <!--Main content-->
     <section id="maincontent">
-      <article>
-        <header>
-          <h2>Haarlem</h2>
-          <p>
-            Haarlem, capital city of the province Noord-Holland. It is a medium
-            sized city, with around 160.000 inhabitants and is known to have a
-            good atmosphere. If you want to go shopping, Haarlem is your place
-            to be, with something for every target group. In 1994, 2004 and 2005
-            it was proclaimed as the best shopping city of The Netherlands.
-          </p>
-          <figure><img src="img/citycentre.png" /></figure>
-        </header>
-        <section>
-          <article>
-            <h3>Windmill De Adriaan</h3>
-            <p>
-              One of Haarlem’s most distinctive sights is the
-              <a href="https://www.molenadriaan.nl/en/" target="_blank"
-                >De Adriaan Windmill</a
-              >. Located on the banks of the river Spaarne, it is a
-              quintessentially Dutch landmark, and a guided tour should not be
-              missed on your trip to Haarlem. From the top of the mill, you have
-              a fantastic view of the historic city centre, along the banks of
-              the river and beyond.
-            </p>
-            <figure><img src="img/windmill.png" /></figure>
-          </article>
-          <article>
-            <h3>De Jopenkerk</h3>
-            <p>
-              De Jopenkerk (<a
-                href="https://www.jopenkerk.nl/haarlem/en/"
-                target="_blank"
-                >Jopen Church</a
-              >) is a renovated former church which now houses a grand café,
-              restaurant and microbrewery. Head to the charming venue for
-              delicious food and drinks, and naturally for a taste of the famous
-              Jopen beer! De Jopenkerk’s parsonage is a unique location for
-              meetings, while the restaurant itself is also available for hire.
-            </p>
-            <figure><img src="img/jopen.png" /></figure>
-          </article>
-        </section>
-        <footer>
-          you can find more information on:
-          <a href="https://www.haarlem.nl">https://www.haarlem.nl</a>
-        </footer>
-      </article>
-    </section>
+    <article><header><h2>Haarlem</h2>
+        <p>Haarlem, capital city of the province Noord-Holland. It is a medium sized city, with around 160.000
+        inhabitants and is known to have a good atmosphere. If you want to go shopping, Haarlem is your
+        place to be, with something for every target group. In 1994, 2004 and 2005 it was proclaimed as the
+        best shopping city of The Netherlands.</p>
+        <figure><img src="img/citycentre.png"></figure></header>
+        <section><article><h3>Windmill De Adriaan</h3>
+        <p>One of Haarlem’s most distinctive sights is the <a href="https://www.molenadriaan.nl/en/" target="_blank">De Adriaan Windmill</a>. 
+        Located on the banks of the river Spaarne, it is a quintessentially Dutch landmark, and a guided tour should not be missed on 
+        your trip to Haarlem. From the top of the mill, you have a fantastic view of the historic city centre, 
+        along the banks of the river and beyond.</p>
+        <figure><img src="img/windmill.png"></figure></article>
+        <article><h3>De Jopenkerk</h3>
+        <p>De Jopenkerk (<a href="https://www.jopenkerk.nl/haarlem/en/" target="_blank">Jopen Church</a>) is a renovated former church which now houses a grand café, 
+        restaurant and microbrewery. Head to the charming venue for delicious food and drinks, 
+        and naturally for a taste of the famous Jopen beer! De Jopenkerk’s parsonage is a unique 
+        location for meetings, while the restaurant itself is also available for hire.</p>
+        <figure><img src="img/jopen.png"></figure></article></section>
+        <footer>you can find more information on: <a href="https://www.haarlem.nl">https://www.haarlem.nl</a></footer>
+    </article></section>
+    <!--Secondary content-->
     <section id="secondarycontent">
-      <article><header><h2>Oute Stad</h2></header>
-          <p>Lively Oude Stad is Haarlem’s commercial center, its narrow cobbled streets lined with 
-          mainstream fashion chains and indie craft stores. Fine-dining restaurants, global eateries, 
-          and cheerful cafes cluster on and around the Grote Markt, alongside bars and hip brewpubs. The Frans
-          Hals Museum, in a 17th-century building, shows work by Hals and other Dutch Old Masters, and organ 
-          recitals take place at St. Bavo Church.</p>
-          <figure><img src="img/citycentre.png"></figure><br>
-          <section><article><h3>Shopping</h3>
-          <p>Haarlem has frequently been voted “Best Shopping City” in the Netherlands, and its easy to see why!
-          Haarlem is a popular city for shopping in North Holland. In fact, people come from all over the 
-          Netherlands – including Amsterdam – just to shop in Haarlem.
-          The city has deservedly been voted Best Shopping City in the Netherlands many times. Haarlem boasts 
-          a diverse range of shops, from fantastic small, quirky boutiques to concept stores to the usual Dutch 
-          department stores (HEMA) and chains (like H&M, Zara and Esprit). Haarlem’s compact centre makes it 
-          perfect for window shopping and browsing.</p>
-          <figure><img src="img/shopping.png"></figure><br>
-          <section><article><h3>The St. Bavo Church in Haarlem</h3>
-          <p>The Grote Kerk or St.-Bavokerk is a Reformed Protestant church and former Catholic cathedral located 
-          on the central market square in the Dutch city of Haarlem. Another Haarlem church called the Cathedral 
-          of Saint Bavo now serves as the main cathedral for the Roman Catholic Diocese of Haarlem-Amsterdam.</p>
-          <figure><img src="img/church.png"></figure></article></section>
-          <footer><p>For more information about The St. Bavo Church <a href="https://www.bavo.nl/">click here !</a></p></footer>
-      </article></section>
-
-      <section id="sportcontent">
-        <article><header><h2>Mudo</h2></header>
-            <ul><li><figure class="sport-figure"><a href="https://www.bikramyogahaarlem.nl/en" target="_blank"><img src="img/sport1.png"></a>
-            <figcaption><article><header><h3><a href="https://www.bikramyogahaarlem.nl/en" target="_blank">Bikram Yoga Haarlem</a></h3></header>
-            <p>Bikram yoga is a series of 26 classic yoga postures and two breathing exercises.</p>
-            <footer>More info: <a href="https://www.bikramyogahaarlem.nl/en">https://www.bikramyogahaarlem.nl/en</a></footer>
-            </article></figcaption></figure></li>
-            <li><figure class="sport-figure"><a href="https://yogamoyo.nl/" target="_blank"><img src="img/sport2.png"></a>
-            <figcaption><article><header><h3><a href="https://yogamoyo.nl/" target="_blank">Yoga Moyo Haarlem</a></h3></header>
-            <p>Practicing Stress Release Yoga is suitable for both beginners and advanced and 
-            stimulates the self-healing capacity of the body. Allowing your body and mind to fully relax in a natural way.</p>
-            <footer>More info: <a href="https://yogamoyo.nl/">https://yogamoyo.nl/</a></footer>
-            </article></figcaption></figure></li>
-            <li><figure class="sport-figure"><a href="https://pannaknockout.com/" target="_blank"><img src="img/sport3.png"></a>
-            <figcaption><article><header><h3><a href="https://pannaknockout.com/" target="_blank">Pannaknockout</a></h3></header>
-            <p>Panna Knock Out is established in the year 2003 and is being run for and by street 
-            football players. In the meantime, we have grown into the worldwide leader and platform of panna- and 
-            street football.</p>
-            <footer>More info: <a href="https://pannaknockout.com/">https://pannaknockout.com/</a><footer>
-            </article></figcaption></figure></li>
-            <li><figure class="sport-figure"><a href="https://www.sportcity.nl/sportschool/haarlem" target="_blank"><img src="img/sport4.png"></a>
-            <figcaption><article><header><h3><a href="https://www.sportcity.nl/sportschool/haarlem" target="_blank">SportCity Haarlem</a></h3></header>
-            <p>With the relaxed atmosphere and space to work on your personal sport goal, you 
-            immediately feel at home at SportCity Haarlem. Whether you are young, old or student and whatever your 
-            objective is: you are welcome!</p>
-            <footer>More info: <a href="https://www.sportcity.nl/sportschool/haarlem">https://www.sportcity.nl/sportschool/haarlem</a></footer>
-            </article></figcaption></figure></li>
-            <li><figure class="sport-figure"><a href="https://www.scopoatletico.nl/" target="_blank"><img src="img/sport5.png"></a>
-            <figcaption><article><header><h3><a href="https://www.scopoatletico.nl/" target="_blank">Scopo Atletico</a></h3></header>
-            <p>Scopo Atletico wants to stimulate a pleasant exercise climate by broadly developing 
-            various target groups on the basis of our 3 pillars (MIND, MOVEMENT, MOTIVATION) in both mental and physical 
-            areas, so that they bring out the best in themselves and others.</p>
-            <footer>More info: <a href="https://www.scopoatletico.nl/">https://www.scopoatletico.nl/</a></footer>
-            </article></figcaption></figure></li>
-            <li><figure class="sport-figure"><a href="https://www.basic-fit.com/en-nl" target="_blank"><img src="img/sport6.png"></a>
-            <figcaption><article><header><h3><a href="https://www.basic-fit.com/en-nl" target="_blank">Basic-Fit</a></h3></header>
-            <p>Fit. Fitter. Fittest. People are becoming ever more aware of the importance of feeling 
-            healthy and in shape. Working out helps you to get fit and stay that way. Fitness is very popular and, at 
-            Basic-Fit, we do everything to make working out at the gym even easier and more fun for you.</p>
-            <footer>More info: <a href="https://www.basic-fit.com/en-nl">https://www.basic-fit.com/en-nl</a></footer>
-            </article></figcaption></figure></li>
-            <li><figure class="sport-figure"><a href="http://indetoelast.nl/" target="_blank"><img src="img/sport7.png"></a>
-            <figcaption><article><header><h3><a href="http://indetoelast.nl/" target="_blank">Zelfverdediging 'In de Toelast'</a></h3></header>
-            <p>Taijiquan has a long history and is based on a rich tradition. Beyond 
-            the significance of this age-old method of self-defense, the relaxed way of moving has become a reason in 
-            itself to practice Taijiquan.</p>
-            <footer>More info: <a href="http://indetoelast.nl/">http://indetoelast.nl/</a></footer>
-            </article></figcaption></figure></li>
-            <li><figure class="sport-figure"><a href="https://glowyogastudio.nl/" target="_blank"><img src="img/sport8.png"></a>
-            <figcaption><article><header><h3><a href="https://glowyogastudio.nl/" target="_blank">Glow Yoga Studio Haarlem</a></h3></header>
-            <p>Discover our beautiful studio with two spacious rooms, a great atmosphere and 
-            more than 40 lessons per week! From Vinyasa Yoga, Yin Yoga to Hatha Yoga or Pregnancy Yoga. For every level, 
-            for every moment there is a lesson that suits you.</p>
-            <footer>More info: <a href="https://glowyogastudio.nl/">https://glowyogastudio.nl/</a></footer>
-            </article></figcaption></figure></li>
-            <li><figure class="sport-figure"><a href="https://trainmore.nl/clubs/hortusplein/" target="_blank"><img src="img/sport9.png"></a>
-            <figcaption><article><header><h3><a href="https://trainmore.nl/clubs/hortusplein/" target="_blank">Trainmore</a></h3></header>
-            <p>You don't live to train, you train to live. You want to be fit to enjoy more and sport for 
-            more energy. During the week you can enjoy yourself in the gym, so that you can go wild at your favorite 
-            festivals during the weekend. You train to do what you love.</p>
-            <footer>More info: <a href="https://trainmore.nl/clubs/hortusplein/">https://trainmore.nl/clubs/hortusplein/</a></footer>
-            </article></figcaption></figure></li>
-            <li><figure class="sport-figure"><a href="https://www.taekwon.nl/brazilian-jiu-jitsu/" target="_blank"><img src="img/sport10.png"></a>
-            <figcaption><article><header><h3><a href="https://www.taekwon.nl/brazilian-jiu-jitsu/" target="_blank">HWA-Rang Dragon</a></h3></header>
-            <p>In the current time you can no longer assume that it will stay with a bump or embrace. 
-            Brazilian Jiu Jitsu is a proven style by professionals and also makes you resilient when the violence stops.</p>
-            <footer>More info: <a href="https://www.taekwon.nl/brazilian-jiu-jitsu">https://www.taekwon.nl/brazilian-jiu-jitsu</a></footer>
-            </article></figcaption></figure></li>
-        </ul></article></section>
-
-        <aside id="referalcontent">   
-          <br><header><h2>HWA-RANG DRAGON</h2>
-          <p>Hwa-Rang Dragon is a martial art school in the Schalkwijk from Haarlem. It specialises in 
-          Taekwondo, Brazilian Jiu Jitsu and Mudo. The school offers lessons for both adults and children 
-          in all of sports stated. But what exactly are these sports and what's the difference between all 
-          of them? Here's an explanation: Brazilian Jiu Jitsu is a martial art and combat sport system that focuses on grappling with 
-          particular emphasis on ground fighting. Brazilian jiu-jitsu was developed from Kodokan judo 
-          ground fighting (newaza) fundamentals that were taught by a number of Japanese individuals 
-          including Takeo Yano, Mitsuyo Maeda, Soshihiro Satake, and Isao Okano. Brazilian jiu-jitsu 
-          eventually came to be its own defined combat sport through the innovations, practices, and 
-          adaptation of judo. </p></header>
-          <figure><a href="https://www.taekwon.nl/brazilian-jiu-jitsu/" target="_blank"><img src="img/sport.png"></a></figure>
-          <footer>If you are interested, you can acces their <a href="https://www.taekwon.nl/brazilian-jiu-jitsu/" target="_blank">
-          website</a> for more information.</footer>
-      </aside><br>
-
-      <section id="contactcontent">
-      <form action="http://witan.nl/inholland/testform.php" method="post">
-          <h2>Contact</h2>
-          <fieldset><legend class="required">Select your title</legend>
-          <ul><li><label for="title_m">
-          <input type="radio" id="title_m" name="title" required value="M." checked>
-          <span class="checkmark"></span>
-          Mister</label></li>
-          <li><label for="title_ms">
-          <input type="radio" id="title_ms" name="title" required value="Ms.">
-          <span class="checkmark"></span>
-          Miss</label></li></ul></fieldset>
-          <p><input required placeholder=" " type="text" id="name" name="name">
-          <label for="name">
-          <span class="required">Enter your name</span></label></p>
-          <p><input required placeholder=" " type="email" id="mail" name="email">
-          <label for="mail">
-          <span class="required">Enter your email address</span></label></p>
-          <p><textarea required placeholder=" " name="message" id="message" rows="10"></textarea>
-          <label for="message">
-          <span class="required">Write your message</span></label></p>
-          <p><button class="btn" type="submit">Send message</button></p>
-      </form></section>
-  </body>
+    <article><header><h2>Oute Stad</h2></header>
+        <p>Lively Oude Stad is Haarlem’s commercial center, its narrow cobbled streets lined with 
+        mainstream fashion chains and indie craft stores. Fine-dining restaurants, global eateries, 
+        and cheerful cafes cluster on and around the Grote Markt, alongside bars and hip brewpubs. The Frans
+        Hals Museum, in a 17th-century building, shows work by Hals and other Dutch Old Masters, and organ 
+        recitals take place at St. Bavo Church.</p>
+        <figure><img src="img/citycentre.png"></figure><br>
+        <section><article><h3>Shopping</h3>
+        <p>Haarlem has frequently been voted “Best Shopping City” in the Netherlands, and its easy to see why!
+        Haarlem is a popular city for shopping in North Holland. In fact, people come from all over the 
+        Netherlands – including Amsterdam – just to shop in Haarlem.
+        The city has deservedly been voted Best Shopping City in the Netherlands many times. Haarlem boasts 
+        a diverse range of shops, from fantastic small, quirky boutiques to concept stores to the usual Dutch 
+        department stores (HEMA) and chains (like H&M, Zara and Esprit). Haarlem’s compact centre makes it 
+        perfect for window shopping and browsing.</p>
+        <figure><img src="img/shopping.png"></figure><br>
+        <section><article><h3>The St. Bavo Church in Haarlem</h3>
+        <p>The Grote Kerk or St.-Bavokerk is a Reformed Protestant church and former Catholic cathedral located 
+        on the central market square in the Dutch city of Haarlem. Another Haarlem church called the Cathedral 
+        of Saint Bavo now serves as the main cathedral for the Roman Catholic Diocese of Haarlem-Amsterdam.</p>
+        <figure><img src="img/church.png"></figure></article></section>
+        <footer><p>For more information about The St. Bavo Church <a href="https://www.bavo.nl/">click here !</a></p></footer>
+    </article></section>
+    <!--Sport content-->
+    <section id="sportcontent">
+    <article><header><h2>Mudo</h2></header>
+        <ul><li><figure class="sport-figure"><a href="https://www.bikramyogahaarlem.nl/en" target="_blank"><img src="img/sport1.png"></a>
+        <figcaption><article><header><h3><a href="https://www.bikramyogahaarlem.nl/en" target="_blank">Bikram Yoga Haarlem</a></h3></header>
+        <p>Bikram yoga is a series of 26 classic yoga postures and two breathing exercises.</p>
+        <footer>More info: <a href="https://www.bikramyogahaarlem.nl/en">https://www.bikramyogahaarlem.nl/en</a></footer>
+        </article></figcaption></figure></li>
+        <li><figure class="sport-figure"><a href="https://yogamoyo.nl/" target="_blank"><img src="img/sport2.png"></a>
+        <figcaption><article><header><h3><a href="https://yogamoyo.nl/" target="_blank">Yoga Moyo Haarlem</a></h3></header>
+        <p>Practicing Stress Release Yoga is suitable for both beginners and advanced and 
+        stimulates the self-healing capacity of the body. Allowing your body and mind to fully relax in a natural way.</p>
+        <footer>More info: <a href="https://yogamoyo.nl/">https://yogamoyo.nl/</a></footer>
+        </article></figcaption></figure></li>
+        <li><figure class="sport-figure"><a href="https://pannaknockout.com/" target="_blank"><img src="img/sport3.png"></a>
+        <figcaption><article><header><h3><a href="https://pannaknockout.com/" target="_blank">Pannaknockout</a></h3></header>
+        <p>Panna Knock Out is established in the year 2003 and is being run for and by street 
+        football players. In the meantime, we have grown into the worldwide leader and platform of panna- and 
+        street football.</p>
+        <footer>More info: <a href="https://pannaknockout.com/">https://pannaknockout.com/</a><footer>
+        </article></figcaption></figure></li>
+        <li><figure class="sport-figure"><a href="https://www.sportcity.nl/sportschool/haarlem" target="_blank"><img src="img/sport4.png"></a>
+        <figcaption><article><header><h3><a href="https://www.sportcity.nl/sportschool/haarlem" target="_blank">SportCity Haarlem</a></h3></header>
+        <p>With the relaxed atmosphere and space to work on your personal sport goal, you 
+        immediately feel at home at SportCity Haarlem. Whether you are young, old or student and whatever your 
+        objective is: you are welcome!</p>
+        <footer>More info: <a href="https://www.sportcity.nl/sportschool/haarlem">https://www.sportcity.nl/sportschool/haarlem</a></footer>
+        </article></figcaption></figure></li>
+        <li><figure class="sport-figure"><a href="https://www.scopoatletico.nl/" target="_blank"><img src="img/sport5.png"></a>
+        <figcaption><article><header><h3><a href="https://www.scopoatletico.nl/" target="_blank">Scopo Atletico</a></h3></header>
+        <p>Scopo Atletico wants to stimulate a pleasant exercise climate by broadly developing 
+        various target groups on the basis of our 3 pillars (MIND, MOVEMENT, MOTIVATION) in both mental and physical 
+        areas, so that they bring out the best in themselves and others.</p>
+        <footer>More info: <a href="https://www.scopoatletico.nl/">https://www.scopoatletico.nl/</a></footer>
+        </article></figcaption></figure></li>
+        <li><figure class="sport-figure"><a href="https://www.basic-fit.com/en-nl" target="_blank"><img src="img/sport6.png"></a>
+        <figcaption><article><header><h3><a href="https://www.basic-fit.com/en-nl" target="_blank">Basic-Fit</a></h3></header>
+        <p>Fit. Fitter. Fittest. People are becoming ever more aware of the importance of feeling 
+        healthy and in shape. Working out helps you to get fit and stay that way. Fitness is very popular and, at 
+        Basic-Fit, we do everything to make working out at the gym even easier and more fun for you.</p>
+        <footer>More info: <a href="https://www.basic-fit.com/en-nl">https://www.basic-fit.com/en-nl</a></footer>
+        </article></figcaption></figure></li>
+        <li><figure class="sport-figure"><a href="http://indetoelast.nl/" target="_blank"><img src="img/sport7.png"></a>
+        <figcaption><article><header><h3><a href="http://indetoelast.nl/" target="_blank">Zelfverdediging 'In de Toelast'</a></h3></header>
+        <p>Taijiquan has a long history and is based on a rich tradition. Beyond 
+        the significance of this age-old method of self-defense, the relaxed way of moving has become a reason in 
+        itself to practice Taijiquan.</p>
+        <footer>More info: <a href="http://indetoelast.nl/">http://indetoelast.nl/</a></footer>
+        </article></figcaption></figure></li>
+        <li><figure class="sport-figure"><a href="https://glowyogastudio.nl/" target="_blank"><img src="img/sport8.png"></a>
+        <figcaption><article><header><h3><a href="https://glowyogastudio.nl/" target="_blank">Glow Yoga Studio Haarlem</a></h3></header>
+        <p>Discover our beautiful studio with two spacious rooms, a great atmosphere and 
+        more than 40 lessons per week! From Vinyasa Yoga, Yin Yoga to Hatha Yoga or Pregnancy Yoga. For every level, 
+        for every moment there is a lesson that suits you.</p>
+        <footer>More info: <a href="https://glowyogastudio.nl/">https://glowyogastudio.nl/</a></footer>
+        </article></figcaption></figure></li>
+        <li><figure class="sport-figure"><a href="https://trainmore.nl/clubs/hortusplein/" target="_blank"><img src="img/sport9.png"></a>
+        <figcaption><article><header><h3><a href="https://trainmore.nl/clubs/hortusplein/" target="_blank">Trainmore</a></h3></header>
+        <p>You don't live to train, you train to live. You want to be fit to enjoy more and sport for 
+        more energy. During the week you can enjoy yourself in the gym, so that you can go wild at your favorite 
+        festivals during the weekend. You train to do what you love.</p>
+        <footer>More info: <a href="https://trainmore.nl/clubs/hortusplein/">https://trainmore.nl/clubs/hortusplein/</a></footer>
+        </article></figcaption></figure></li>
+        <li><figure class="sport-figure"><a href="https://www.taekwon.nl/brazilian-jiu-jitsu/" target="_blank"><img src="img/sport10.png"></a>
+        <figcaption><article><header><h3><a href="https://www.taekwon.nl/brazilian-jiu-jitsu/" target="_blank">HWA-Rang Dragon</a></h3></header>
+        <p>In the current time you can no longer assume that it will stay with a bump or embrace. 
+        Brazilian Jiu Jitsu is a proven style by professionals and also makes you resilient when the violence stops.</p>
+        <footer>More info: <a href="https://www.taekwon.nl/brazilian-jiu-jitsu">https://www.taekwon.nl/brazilian-jiu-jitsu</a></footer>
+        </article></figcaption></figure></li>
+    </ul></article></section>
+    <!--Referral content-->
+    <aside id="referalcontent">   
+        <br><header><h2>HWA-RANG DRAGON</h2>
+        <p>Hwa-Rang Dragon is a martial art school in the Schalkwijk from Haarlem. It specialises in 
+        Taekwondo, Brazilian Jiu Jitsu and Mudo. The school offers lessons for both adults and children 
+        in all of sports stated. But what exactly are these sports and what's the difference between all 
+        of them? Here's an explanation: Brazilian Jiu Jitsu is a martial art and combat sport system that focuses on grappling with 
+        particular emphasis on ground fighting. Brazilian jiu-jitsu was developed from Kodokan judo 
+        ground fighting (newaza) fundamentals that were taught by a number of Japanese individuals 
+        including Takeo Yano, Mitsuyo Maeda, Soshihiro Satake, and Isao Okano. Brazilian jiu-jitsu 
+        eventually came to be its own defined combat sport through the innovations, practices, and 
+        adaptation of judo. </p></header>
+        <figure><a href="https://www.taekwon.nl/brazilian-jiu-jitsu/" target="_blank"><img src="img/sport.png"></a></figure>
+        <footer>If you are interested, you can acces their <a href="https://www.taekwon.nl/brazilian-jiu-jitsu/" target="_blank">
+        website</a> for more information.</footer>
+    </aside><br>
+    <!--Contact content-->
+    <section id="contactcontent">
+    <form action="http://witan.nl/inholland/testform.php" method="post">
+        <h2>Contact</h2>
+        <fieldset><legend class="required">Select your title</legend>
+        <ul><li><label for="title_m">
+        <input type="radio" id="title_m" name="title" required value="M." checked>
+        <span class="checkmark"></span>
+        Mister</label></li>
+        <li><label for="title_ms">
+        <input type="radio" id="title_ms" name="title" required value="Ms.">
+        <span class="checkmark"></span>
+        Miss</label></li></ul></fieldset>
+        <p><input required placeholder=" " type="text" id="name" name="name">
+        <label for="name">
+        <span class="required">Enter your name</span></label></p>
+        <p><input required placeholder=" " type="email" id="mail" name="email">
+        <label for="mail">
+        <span class="required">Enter your email address</span></label></p>
+        <p><textarea required placeholder=" " name="message" id="message" rows="10"></textarea>
+        <label for="message">
+        <span class="required">Write your message</span></label></p>
+        <p><button class="btn" type="submit">Send message</button></p>
+    </form></section>
+</main>
+<footer><p>Copyright &copy; 2019, Beghiu Alexandru(646415), InHolland</p></footer>
+</body>
 </html>
