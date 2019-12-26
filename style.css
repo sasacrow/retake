@@ -1,0 +1,748 @@
+* {
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: ariana-pro, forma-djr-deck, interstate, sans-serif;
+  font-size: 18px;
+}
+
+html,
+body {
+  width: auto;
+  height: auto;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  display: flex;
+}
+
+figure > img {
+  flex: 1;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  height: 4em;
+  background: #1b1b1b;
+  z-index: 2;
+  width: 100%;
+}
+
+nav > ul > li.logo img {
+  width: auto;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger + #toggle {
+  display: none;
+}
+
+main {
+  display: none;
+  overflow-x: hidden;
+}
+
+main > #maincontent,
+main > #secondarycontent {
+  padding: 1em;
+}
+
+main > section figure:not(.sport-figure) {
+  box-shadow: 0 5px 0.5em 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#referalcontent > footer,
+main article > footer {
+  color: #707070;
+  font-style: italic;
+}
+
+#landing {
+  height: 100vh;
+}
+
+#landing,
+#landing > .header-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#landing > .header-background {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+#landing > .header-background > video {
+  display: none;
+}
+
+#landing > .header-content {
+  padding: 2em;
+  z-index: 2;
+  color: #1b1b1b;
+  text-shadow: 2px 1px 2px black;
+}
+
+#landing > .header-content > h1.title {
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
+#landing > .header-content > h2.payoff {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+#sportcontent > article > header {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+#sportcontent > article > header > h2 {
+  color: #000000;
+}
+
+#sportcontent > article > ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sportcontent > article > ul > li {
+  margin-bottom: 1em;
+  background: #ffffff;
+  padding: 1em;
+}
+
+#sportcontent .sport-figure {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-column-gap: 1em;
+}
+
+#sportcontent .sport-figure > img {
+  width: 150px;
+  height: auto;
+}
+
+#sportcontent .sport-figure article > header > h3 > a {
+  text-decoration: none;
+  color: #28d1e7;
+}
+
+#sportcontent .sport-figure article > header,
+#sportcontent .sport-figure article > p {
+  margin-bottom: 0.5em;
+}
+
+#referalcontent {
+  margin: 0;
+}
+
+#referalcontent footer {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+#referalcontent h2 {
+  text-align: center;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+}
+
+#contactcontent {
+  width: 100%;
+  background: #757474;
+  padding: 1em 0;
+}
+
+#contactcontent > form {
+  padding: 1.5em;
+}
+
+#contactcontent fieldset {
+  border: none;
+  margin-top: 0.5em;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+#contactcontent fieldset > legend {
+  color: #000000;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+#contactcontent fieldset ul {
+  padding: 0;
+  list-style: none;
+}
+
+#contactcontent fieldset input {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+#contactcontent fieldset label {
+  display: inline-block;
+}
+
+#contactcontent fieldset li {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+#contactcontent fieldset .checkmark {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: #5e5959;
+  margin-bottom: -0.25rem;
+  border-radius: 100%;
+  margin-right: 0.25rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+#contactcontent fieldset input:checked + .checkmark:before {
+  transition: 0.3s ease;
+}
+
+#contactcontent fieldset input:checked + .checkmark:before {
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  background: #28d1e7;
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+  margin-top: 25%;
+}
+
+#contactcontent .required:after {
+  content: " *";
+  color: red;
+}
+
+#contactcontent p {
+  padding-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+#contactcontent p > label {
+  position: absolute;
+  left: 0;
+  cursor: text;
+  padding: 0.5em 0;
+  transition: 0.3s ease;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #000000;
+  top: 1em;
+  pointer-events: none;
+}
+
+#contactcontent p > input,
+#contactcontent p > textarea {
+  border: none;
+  padding: 0.5em 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  width: 100%;
+  border-bottom: 1px solid #707070;
+  transition: 0.3s ease;
+  background: transparent;
+  resize: none;
+}
+
+#contactcontent p > input {
+  height: 34px;
+  line-height: 34px;
+}
+
+.btn {
+  border: 1px solid #28d1e7;
+  border-radius: 5px;
+  height: 34px;
+  color: #28d1e7;
+  line-height: 10px;
+  background: transparent;
+  transition: 0.3s ease;
+  font-size: 0.9rem;
+  padding: 0 0.5rem 0.1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover,
+.btn.full {
+  background: #28d1e7;
+  color: #ffffff;
+}
+
+.btn:focus {
+  background: #28d1e7;
+  color: #ffffff;
+  outline: none;
+}
+
+#contactcontent p > textarea:focus,
+#contactcontent p > input:focus {
+  outline: none;
+  border-color: #28d1e7;
+  box-shadow: 0 1px 0 #28d1e7;
+}
+
+#contactcontent p > textarea:focus + label,
+#contactcontent p > input:focus + label {
+  color: #28d1e7;
+  transform: translateY(-1.4em);
+  font-size: 0.8rem;
+}
+
+#contactcontent p > input:focus + label,
+#contactcontent p > input:not(:placeholder-shown) + label,
+#contactcontent p > textarea:focus + label,
+#contactcontent p > textarea:not(:placeholder-shown) + label {
+  transform: translateY(-1.4em);
+  font-size: 0.8rem;
+}
+
+body > footer {
+  display: none;
+  text-align: center;
+  padding: 1em;
+  background: #1b1b1b;
+}
+
+body > footer > p {
+  color: #f5f5f5;
+}
+
+#accept,
+#decline {
+  display: none;
+}
+
+#decline:checked ~ #cookiestatement,
+#accept:checked ~ #cookiestatement {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#decline:checked ~ main,
+#decline:checked ~ footer,
+#accept:checked ~ main,
+#accept:checked ~ footer {
+  display: block;
+}
+
+#cookiestatement {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  transition: 0.3s ease;
+}
+
+#cookiestatement:after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+#cookiestatement > article {
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
+  background: #f5f5f5;
+  color: #222222;
+  border-radius: 5px;
+  z-index: 2;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+#cookiestatement > article > p {
+  margin: 1em 0;
+}
+
+#cookiestatement > article > section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#cookiestatement > article > section > .btn {
+  padding: 0.3em 1em;
+  width: calc(50% - 0.5em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tablet and mobile media query */
+@media screen and (min-width: 0px) and (max-width: 991px) {
+  #landing > .header-background {
+    background-image: url("/img/video.mp4");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+
+  #landing > .header-content {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  nav {
+    position: fixed;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    height: 3em;
+    width: 3em;
+    top: 0.5em;
+    right: 0.75em;
+    z-index: 4;
+  }
+
+  #toggle:checked + nav {
+    height: 100vh;
+  }
+
+  .hamburger svg {
+    fill: #ffffff;
+  }
+
+  nav > ul {
+    padding: 1em;
+    list-style: none;
+  }
+
+  nav > ul > li.logo {
+    height: 2em;
+    margin-bottom: 1em;
+    width: 300px;
+  }
+
+  nav > ul > li:not(.logo) {
+    margin-bottom: 0.75em;
+  }
+
+  nav > ul > li:not(.logo) a {
+    color: #ffffff;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+
+  main > section:not(#sportcontent) h1,
+  main > section:not(#sportcontent) h2,
+  main > section:not(#sportcontent) h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  main > section:not(#sportcontent) p {
+    margin-bottom: 1rem;
+  }
+
+  main > section:not(#sportcontent) figure {
+    margin-bottom: 1.5rem;
+  }
+
+  #maincontent header > p {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #landing > .header-background > video {
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    z-index: 1;
+  }
+
+  #landing > .header-background > img {
+    display: none;
+  }
+
+  #landing > .header-content {
+    z-index: 2;
+    animation: header-content-size 5s forwards;
+  }
+
+  @keyframes header-content-size {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  #landing > .header-content > h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  #landing > .header-content > h2 {
+    width: 600px;
+  }
+
+  nav > ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+
+  nav > ul > li.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  nav > ul > li.logo > a {
+    height: 32px;
+  }
+
+  nav > ul > li.logo img {
+    height: 2em;
+  }
+
+  nav > ul > li:not(.logo) {
+    display: inline-block;
+    border-bottom: 0.2em solid #222222;
+    box-sizing: border-box;
+    height: 4em;
+    transition: 0.2s ease;
+  }
+
+  nav > ul > li:not(.logo) > a {
+    display: block;
+    color: #aaaaaa;
+    text-decoration: none;
+    transition: 0.2s ease;
+    padding: 0 0.5em;
+    height: 4em;
+    line-height: 4em;
+    box-sizing: border-box;
+  }
+
+  nav > ul > li:not(.logo):hover {
+    border-color: #28d1e7;
+  }
+
+  nav > ul > li:not(.logo) > a:hover {
+    color: #f5f5f5;
+    border-color: #28d1e7;
+    transform: scale(1.1);
+  }
+
+  main {
+    padding-top: 2rem;
+  }
+
+  #maincontent > article > header {
+    display: grid;
+    grid-template-areas: "content image" "content2 image" "content3 image";
+    grid-gap: 1em;
+  }
+
+  #maincontent > article > header > h2 {
+    grid-area: content;
+    margin: 0;
+  }
+
+  #maincontent > article > header > p {
+    grid-area: content2;
+    margin: 0;
+    font-size: 1.2em;
+  }
+
+  #maincontent > article figure {
+    grid-area: image;
+  }
+
+  #maincontent > article > section {
+    margin-top: 1.5em;
+    display: grid;
+    grid-template-areas: "image content" "image content2" "image content3";
+    grid-gap: 1.5em;
+  }
+
+  #maincontent > article > section p {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  #maincontent > article > section > figure {
+    margin: 0;
+  }
+  #maincontent > article > footer {
+    margin-top: -30px;
+  }
+
+  #secondarycontent > article h2,
+  #secondarycontent > article h3 {
+    margin-bottom: 0.5em;
+  }
+
+  #secondarycontent > article p {
+    margin-bottom: 1em;
+  }
+
+  #secondarycontent > article > section:not(:last-child) {
+    margin-top: 1em;
+    display: grid;
+    grid-template-areas: "content image";
+    grid-gap: 1em;
+  }
+
+  #secondarycontent > article > section:not(:last-child) article {
+    grid-area: content;
+  }
+
+  #secondarycontent > article > section:not(:last-child) section {
+    grid-area: image;
+  }
+
+  #secondarycontent > article > section:last-child > article {
+    margin-top: 1em;
+    display: grid;
+    grid-template-areas: "image content" "image content2" "image content3";
+    grid-gap: 1em;
+  }
+
+  #secondarycontent > article > section:last-child h3 {
+    margin: 0;
+  }
+
+  #secondarycontent > article > section:last-child header {
+    grid-area: content;
+  }
+
+  #secondarycontent > article > section:last-child section {
+    grid-area: content2;
+  }
+
+  #secondarycontent > article > section:last-child figure {
+    grid-area: image;
+  }
+  #secondarycontent > figure {
+    width: 5px;
+  }
+
+  #sportcontent {
+    margin-top: 2em;
+    padding: 1em 0;
+  }
+
+  main > #maincontent,
+  main > #secondarycontent,
+  main > #contactcontent > form {
+    margin: 0 auto;
+    padding: 0;
+    width: calc(100% - 4rem);
+  }
+
+  #sportcontent > article > ul {
+    padding: 0;
+    margin: 0 auto;
+    width: calc(100% - 4rem);
+  }
+
+  nav > ul {
+    margin: auto;
+    width: calc(100% - 4rem);
+  }
+
+  main > section h2 {
+    font-size: 1.7em;
+    margin: 0;
+  }
+
+  main > section h3 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  main article > footer {
+    margin-top: 1.5em;
+    font-style: italic;
+    color: #707070;
+  }
+
+  #referalcontent {
+    padding: 1em 2em;
+  }
+
+  #cookiestatement > article {
+    width: 50em;
+  }
+}
+
+/* PC (Desktop/Laptop) media query */
+@media screen and (min-width: 1280px) {
+  main > #maincontent,
+  main > #secondarycontent,
+  main > #contactcontent > form {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  nav > ul {
+    width: 1024px;
+    padding: 0 2rem;
+  }
+
+  #sportcontent > article > ul {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  #referalcontent {
+    width: 100%;
+    padding: 1em;
+  }
+}
